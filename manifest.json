@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trip Planner DOCX",
+  "description": "This extension downloads trip data in a docx file",
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+  "version": "1.0",
+
+  "page_action": {
+          "default_icon": {                    // optional
+		    "16": "images/icon-16.png",           // optional
+			"19": "images/icon-19.png",           // optional
+			"32": "images/icon-32.png",           // optional
+            "38": "images/icon-38.png",           // optional
+            "48": "images/icon-48.png",           // optional
+			"128": "images/icon-128.png"           // optional
+          },
+          "default_title": "Trip Planner DOCX"      // optional; shown in tooltip
+          
+        },
+  "permissions": [
+    "declarativeContent",
+	"tabs",
+	"downloads"
+  ]
+}
